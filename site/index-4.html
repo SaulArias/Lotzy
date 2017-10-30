@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+    <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="js/superfish.js" type="text/javascript"></script>
+    <script src="js/contact-form.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
+        </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+           <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <![endif]-->
+</head>
+
+<body id="page5">
+    <!--==============================header=================================-->
+    <header>
+        <div class="row-1">
+            <div class="header-shadow">
+                <div class="row-shadow">
+                    <div class="main relative">
+                        <span class="login">
+                            <a class="link-1" href="#popupreg" class="popup-link">Registrarse</a>  <a class="link-1" > || </a>  <a class="link-1" href="#popup" class="popup-link">Login</a>
+                        </span>
+                        <h1><a class="logo" href="index.html">Office</a></h1>
+                        <nav>
+                            <ul class="menu">
+                                <li class="first-item"><a href="index.html">Home</a></li>
+                                <li><a href="index-1.html">Services</a></li>
+                                <li><a href="index-2.html">Office search</a>
+                                    <ul>
+                                        <li><a href="#">Alabama</a></li>
+                                        <li><a href="#">California</a>
+                                            <ul>
+                                                <li><a href="#">Campbell</a></li>
+                                                <li><a href="#">Costa Mesa</a></li>
+                                                <li><a href="#">Los Angeles</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Maine</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index-3.html">Virtual office</a></li>
+                                <li class="last-item active"><a class="last" href="index-4.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="intento">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img  id = "enlaces" src="img/Instagram.ico" ></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><img  id = "enlaces" src="img/facebook.ico" ></a>
+                        <a href="https://www.snapchat.com/l/es/" target="_blank"><img  id = "enlaces" src="img/Snapchat.ico" ></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img  id = "enlaces" src="img/twitter.ico" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="container">
+                <div class="banner">
+                    <div class="banner-text">
+                        <h2>office is the leading</h2>
+                        <h4>brokerage for offices to rent worldwide</h4>
+                    </div>
+                    <a class="button" href="#">Find offices for rent</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--==============================LOGIN=================================-->
+    <div class="modal-wrapper" id="popup">
+        <div class="popup-contenedor">
+            <form method="post" target="_blank">
+                <h2 style="color: black">LOGIN</h2>
+                <br>
+                <p style="color: black" ;> Usuario: <input type="text" placeholder="Usuario.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,15}$" title="Un nombre de usuario apropiado debe comenzar con una letra, contener letras, números, guiones bajos y puntos, y tener entre 3 y 15 caracteres de longitud" required style="width:200px; height:30px" /></p>
+                <p style="color: black" ;> Contraseña: <input type="password" placeholder="Password.." pattern="[a-zA-Z0-9]{6,15}" title="Una contraseña válida debe estar compuesta por letras y/o números y tener una longitud entre 6 y 15 caracteres" required style="width:200px; height:30px" /></p>
+                <br>
+                <input type="submit" value="Entrar" style="width:140px; height:50px" class="boton" />
+            </form>
+            <a class="popup-cerrar" href="#">X</a>
+        </div>
+    </div>
+    <!--==============================REGISTRO=================================-->
+    <div class="modal-wrapper" id="popupreg">
+        <div class="popup-contenedor-reg">
+            <form method="post" action="reg.php">
+                <h2 style="color: black">Registro</h2>
+                <p style="color: black" ;> Usuario: <input type="text" placeholder="Usuario.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,15}$" title="Un nombre de usuario apropiado debe comenzar con una letra, contener letras, números, guiones bajos y puntos, y tener entre 3 y 15 caracteres de longitud" required style="width:300px; height:30px" /></p>
+                <p style="color: black" ;> Contraseña: <input type="password" name="contra" placeholder="Password.." pattern="[a-zA-Z0-9]{6,15}" title="Una contraseña válida debe estar compuesta por letras y/o números y tener una longitud entre 6 y 15 caracteres" required style="width:300px; height:30px" /></p>
+                <p style="color: black" ;> Nombre: <input type="text" name="nombre" placeholder="Nombre.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,40}$" title="Un nombre apropiado debe comenzar con una letra, contener letras y tener entre 3 y 40 caracteres de longitud" required style="width:300px; height:30px" /></p>
+                <p style="color: black" ;> Apellido: <input type="text" name="apellido" placeholder="Apellido.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,40}$" title="Un apellido apropiado debe comenzar con una letra, contener letras y tener entre 3 y 40 caracteres de longitud" required style="width:300px; height:30px" /></p>
+                <p style="color: black" ;> Correo: <input type="email" name="correo" placeholder="Correo.." title="Ingrese un correo valido" required style="width:300px; height:30px" /></p>
+                <p style="color: black" ;> Direccion: <input type="text" name="direccion" placeholder="Direccion.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,40}$" title="Una direccion apropiada debe comenzar con una letra, contener letras, numeros y tener entre 3 y 40 caracteres de longitud" required style="width:300px; height:30px" /></p>
+                <p style="color: black" ;> Telefono: <input type="text" name="telefono" placeholder="Usuario.." pattern="^\d{10}$" title="Ingrese un telefono de 10 digitos" required style="width:300px; height:30px" /></p>
+                <br>
+                <input type="submit" value="Aceptar" style="width:140px; height:50px" class="boton" action="" />
+            </form>
+            <a class="popup-cerrar-reg" href="#">X</a>
+        </div>
+    </div>
+    <!--==============================content================================-->
+    <section id="content">
+        <div class="h3-bg">
+            <div class="main">
+                <div class="container_12">
+                    <div class="wrapper">
+                        <article class="grid_5">
+                            <div class="indent3">
+                                <h3>Contact Information</h3>
+                            </div>
+                        </article>
+                        <article class="grid_7">
+                            <div class="indent3">
+                                <h3>Contact Form</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="main">
+                <div class="container_12">
+                    <div class="indent">
+                        <div class="wrapper">
+                            <article class="grid_5">
+                                <div class="figure-border indent-bot">
+                                    <iframe width="340" height="230" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                                </div>
+                                <dl>
+                                    <dt><strong class="color-3">The Company Name Inc.</strong><br>8901 Marmora Road, Glasgow, D04 89GR. </dt>
+                                    <dd><span>Freephone:</span>+1 800 559 6580</dd>
+                                    <dd><span>Telephone:</span>+1 959 603 6035</dd>
+                                    <dd><span>FAX:</span>+1 504 889 9898</dd>
+                                    <dd>E-mail: <a class="link-4" href="#">mail@demolink.org</a></dd>
+                                </dl>
+                            </article>
+                            <article class="grid_7">
+                                <div id="contact_form">
+                                    <form id="contact-form" method="post" class="main-contacts">
+                                        <fieldset>
+                                            <input type="hidden" name="owner_email" id="owner_email" value="support@guardlex.com" />
+                                            <input type="hidden" name="serverProcessorType" id="serverProcessorType" value="php" />
+                                            <input type="hidden" name="smtpMailServer" id="smtpMailServer" value="localhost" />
+                                            <input type="hidden" name="stripHTML" id="stripHTML" value="true" />
+                                            <div class="rowElem2">
+                                                <input type="text" name="name" id="name" value="Name:" onblur="if(this.value=='') this.value='Name:'" onFocus="if(this.value =='Name:' ) this.value=''">
+                                                <label class="error" for="name" id="name_error">*This field is required.</label>
+                                                <label class="error" for="name" id="name_error2">*This is not a valid name.</label>
+                                            </div>
+                                            <div class="rowElem2">
+                                                <input type="text" name="email" id="email" value="E-mail:" onblur="if(this.value=='') this.value='E-mail:'" onFocus="if(this.value =='E-mail:' ) this.value=''">
+                                                <label class="error" for="email" id="email_error">*This field is required.</label>
+                                                <label class="error" for="email" id="email_error2">*This is not a valid email address.</label>
+                                            </div>
+                                            <div class="rowElem2">
+                                                <input type="text" name="phone" id="phone" value="Phone:" onblur="if(this.value=='') this.value='Phone:'" onFocus="if(this.value =='Phone:' ) this.value=''">
+                                                <label class="error" for="phone" id="phone_error">*This field is required.</label>
+                                                <label class="error" for="phone" id="phone_error2">*This is not a valid phone number.</label>
+                                            </div>
+                                            <div class="textarea-box">
+                                                <textarea cols="1" rows="1" name="message" id="message" onBlur="if(this.value=='') this.value='Message:'" onFocus="if(this.value =='Message:' ) this.value=''">Message:</textarea>
+                                                <label class="error" for="message" id="message_error">*This field is required.</label>
+                                                <label class="error" for="message" id="message_error2">*The message is too short.</label>
+                                            </div>
+                                            <div class="buttons">
+                                                <a href="#" id="clear" class="button1">Clear</a>
+                                                <a href="#" id="submit" class="button1">Send</a>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================footer=================================-->
+    <footer>
+
+        <div class="main">
+            <div class="wrapper">
+                <span class="fleft">Office for rent (c) 2011 <span class="color-2">|</span> <a class="link" href="index-5.html">Privacy policy</a><br>
+                <!-- {%FOOTER_LINK} -->
+                </span>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="first"><a href="index.html">Home</a></li>
+                        <li><a href="index-1.html">Services</a></li>
+                        <li><a href="index-2.html">Office search</a></li>
+                        <li><a href="index-3.html">Virtual office</a></li>
+                        <li class="last"><a class="active" href="index-4.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

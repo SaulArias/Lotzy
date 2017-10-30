@@ -1,0 +1,12 @@
+.menu li.first-item {behavior: url(js/PIE.htc);}
+.menu li.last-item {behavior: url(js/PIE.htc);}
+.menu li li {behavior: url(js/PIE.htc);}
+.button {behavior: url(js/PIE.htc);}
+.button1{behavior: url(js/PIE.htc); position:relative;}
+h3 {behavior: url(js/PIE.htc); position:relative;}
+.bg {behavior: url(js/PIE.htc); position:relative;}
+#contact-form input {behavior: url(js/PIE.htc); position:relative;}
+#contact-form textarea {behavior: url(js/PIE.htc); position:relative;}
+.figure-border {behavior: url(js/PIE.htc); position:relative;}
+.nivo-caption {behavior: url(js/PIE.htc);}
+.row-shadow  {behavior: url(js/PIE.htc);}
