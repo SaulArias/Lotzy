@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root", "zaul0309", "muebleriaprimavera");
+$con = mysqli_connect("localhost", "root", "12345", "muebleriaprimavera");
 if(mysqli_connect_errno()){
     echo "No se conecto con la base de datos"
 }
