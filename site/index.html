@@ -85,7 +85,7 @@
     <!--==============================LOGIN=================================-->
     <div class="modal-wrapper" id="popup">
         <div class="popup-contenedor">
-            <form method="post" target="_blank">
+            <form method="post" action="">
                 <h2 style="color: black">LOGIN</h2>
                 <br>
                 <p style="color: black" ;> Usuario: <input type="text" placeholder="Usuario.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,15}$" title="Un nombre de usuario apropiado debe comenzar con una letra, contener letras, números, guiones bajos y puntos, y tener entre 3 y 15 caracteres de longitud" required style="width:200px; height:30px" /></p>
@@ -99,7 +99,7 @@
     <!--==============================REGISTRO=================================-->
     <div class="modal-wrapper" id="popupreg">
         <div class="popup-contenedor-reg">
-            <form method="post" action="reg.php">
+            <form method="post" action="">
                 <h2 style="color: black">Registro</h2>
                 <p style="color: black" ;> Usuario: <input type="text" placeholder="Usuario.." pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,15}$" title="Un nombre de usuario apropiado debe comenzar con una letra, contener letras, números, guiones bajos y puntos, y tener entre 3 y 15 caracteres de longitud" required style="width:300px; height:30px" /></p>
                 <p style="color: black" ;> Contraseña: <input type="password" name="contra" placeholder="Password.." pattern="[a-zA-Z0-9]{6,15}" title="Una contraseña válida debe estar compuesta por letras y/o números y tener una longitud entre 6 y 15 caracteres" required style="width:300px; height:30px" /></p>
@@ -111,7 +111,12 @@
                 <br>
                 <input type="submit" value="Aceptar" style="width:140px; height:50px" class="boton" action="" />
             </form>
-            <a class="popup-cerrar-reg" href="#">X</a>
+            <?php
+                if(isset($_POST['Aceptar'])){
+                    require("reg.php");
+                }
+            ?>
+                <a class="popup-cerrar-reg" href="#">X</a>
         </div>
     </div>
 </body>
